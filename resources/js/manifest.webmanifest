@@ -1,0 +1,15 @@
+{
+  "name": "HamPelak",
+  "short_name": "HamPelak",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFF",
+  "description": "Apartment Managment App",
+  "icons": [
+    {
+      "src": "../imgs/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
