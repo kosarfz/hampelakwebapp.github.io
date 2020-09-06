@@ -1,0 +1,88 @@
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 150%;
+  }
+  h4 {
+    font-size: 120%;
+  }
+  h5 {
+    font-size: 110%;
+  }
+  .big-icon {
+    font-size: 2em;
+  }
+  .navbar-brand img {
+    width: 80px;
+  }
+  .navbar-btn {
+    display: none;
+  }
+  #header {
+    padding-top: 15% !important;
+  }
+  #demo {
+    width: 100vw;
+    padding-left: 35% !important;
+    padding-right: 15% !important;
+  }
+  #header-img {
+    /* text-align: center; */
+    /* margin-left: 3% !important; */
+  }
+  #header-img img {
+    /* width: 130vw; */
+    padding-top: 10%;
+    /* padding-left: 70% !important; */
+    padding-bottom: 10%;
+    /* margin-left: 10% !important; */
+  }
+  .header-box {
+    display: none;
+  }
+  .feature-box {
+    background-color: white;
+    margin-bottom: 3%;
+  }
+  .advantage-header {
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+  }
+  .advantage-box {
+    padding-bottom: 10%;
+    border-left: none !important;
+    border-bottom: 1px solid rgb(223, 223, 223);
+  }
+  .download-btn {
+    padding-right: 8% !important;
+    padding-left: 8% !important;
+    margin-bottom: 3% !important;
+  }
+  #download img {
+    display: none;
+  }
+  .download-box {
+    padding-top: 3% !important;
+    padding-bottom: 10%;
+  }
+  .contact-box {
+    padding-right: 4% !important;
+  }
+  .contact-text {
+    text-align: right !important;
+  }
+  .contact-text a {
+    padding-right: 15% !important;
+  }
+  .contact-img {
+    padding-left: 2% !important;
+  }
+  .footer-icon {
+    padding-right: 5% !important;
+    padding-left: 10% !important;
+    padding-top: 5%;
+  }
+}
