@@ -1,0 +1,142 @@
+html,
+body {
+  background-color: rgb(252, 252, 252);
+}
+/* ----- SIDEBAR ----- */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a {
+  display: block;
+  color: rgb(46, 46, 46);
+  padding: 12px;
+  text-decoration: none;
+}
+.sidebar a.selected {
+  color: #00c0c0;
+}
+.sidebar a:hover:not(.active) {
+  color: #00c0c0;
+}
+.dropdown-btn {
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  padding: 12px;
+}
+.dropdown-container {
+  display: none;
+  padding-right: 22px;
+  font-size: 15px;
+  color: rgb(151, 151, 151);
+}
+.dropdown-btn:active,
+.dropdown-btn:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+div.content {
+  margin-right: 280px;
+  padding: 1px 16px;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+    padding-top: 15%;
+  }
+}
+
+/* ----- TEXT ----- */
+.link {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+.link:hover {
+  color: #555555;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+.blue-link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #00c0c0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+.blue-link:hover {
+  color: #00eeee;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+
+/* ----- INPUT (Type=Number) ----- */
+.numberInput::-webkit-outer-spin-button,
+.numberInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.numberInput[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ----- SCROLLBAR ----- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #dadada;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cacaca;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}

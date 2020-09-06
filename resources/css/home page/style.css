@@ -1,0 +1,190 @@
+/*
+----- COLORS -----
+Dark Blue: #003675
+Dark Blue HOVER: #004594, #003066
+Light Blue: #00eeee
+Light Blue HOVER: #00c0c0
+*/
+
+/* ----- BASIC SETUP ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #fff;
+  color: rgb(39, 39, 39);
+  font-weight: 300;
+  font-size: 17px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  direction: rtl;
+  font-family: shabnam;
+}
+@font-face {
+  font-family: shabnam;
+  src: url(../../vendors/font/Shabnam.woff);
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+input,
+textarea {
+  outline: none;
+  box-shadow: none !important;
+}
+
+/* ----- BUTTONS ----- */
+.fullbtn {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-radius: 12vh;
+  background-color: #00c0c0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  box-shadow: none !important;
+}
+.fullbtn:hover {
+  background-color: #00eeee;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+
+.ghostbtn {
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-radius: 12vh;
+  border: 1.1px solid #00c0c0;
+  color: #00c0c0 !important;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  box-shadow: none !important;
+}
+.ghostbtn:hover {
+  color: #fff !important;
+  background-color: #00c0c0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+.header-ghostbtn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12vh;
+  border: 1.1px solid #00eeee;
+  color: #00eeee !important;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  box-shadow: none !important;
+}
+.header-ghostbtn:hover {
+  color: #fff !important;
+  background-color: #00eeee;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+.submitbtn {
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-radius: 6vh;
+  color: white;
+  background-color: #004594;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  box-shadow: none !important;
+}
+.submitbtn:hover {
+  color: white;
+  background-color: #003066;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+/* ----- ICONS ----- */
+.big-icon {
+  font-size: 2.6em;
+  color: #004594;
+}
+.normal-icon {
+  font-size: 2em;
+  color: #004594;
+}
+.small-icon {
+  font-size: 1.6em;
+  color: #004594;
+  vertical-align: middle;
+}
+/* ----- TEXT ----- */
+.blue-text {
+  color: #003066;
+}
+
+/* ----- NAVBAR ----- */
+.nav-tab {
+  color: #727272 !important;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+.nav-tab:hover {
+  color: #003675 !important;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+}
+
+/* ----- CAROUSEL ----- */
+.carousel-caption {
+  position: static;
+}
+.carousel-btn {
+  color: #00f8f8;
+  font-size: 16px;
+}
+
+/* ----- FEATURE SECTION ----- */
+.feature-box {
+  color: #003066;
+  border: 1px solid #ececec;
+  border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+.feature-box:hover {
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}

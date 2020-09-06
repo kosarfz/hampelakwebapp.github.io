@@ -1,0 +1,604 @@
+<!-- Hampelak Website - By: Kosar Feyzi -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="HamPelak is a website for apartment managment that can be used by manager and units."
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../../vendors/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/home page/style.css" />
+    <link rel="stylesheet" href="../../css/app pages/style.css" />
+    <!-- Calendar -->
+    <link rel="stylesheet" href="../../../vendors/css/js-persian-cal.css" />
+    <script src="../../../vendors/js/js-persian-cal.min.js"></script>
+
+    <title>Payment</title>
+    <link rel="icon" href="../../imgs/icon.png" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand m-0 pr-5" href="#">
+          <img src="../../imgs/logo.png" alt="logo" style="width: 110px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto pl-4">
+            <li class="nav-item mr-2 ml-3 pt-1 pb-1">
+              <a class="nav-link nav-tab" href="../../../home.html">
+                <ion-icon
+                  name="log-out-outline"
+                  style="font-size: 1.5em; vertical-align: middle"
+                ></ion-icon>
+                خروج از حساب کاربری <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item mr-2 ml-3 pt-1 pb-1">
+              <a class="nav-link nav-tab" href="support.html">
+                <ion-icon
+                  name="chatbox-ellipses-outline"
+                  style="font-size: 1.5em; vertical-align: middle"
+                ></ion-icon>
+                ارتباط با ما <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- CONTAINER -->
+    <div class="w-100" style="padding-top: 5%">
+      <!-- SIDEBAR -->
+      <div class="sidebar shadow text-justify bg-white" style="padding-bottom: 5%">
+        <div class="text-center mt-4 p-3">
+          <img
+            src="../../imgs/default-house.png"
+            alt="logo"
+            class="rounded-circle mt-3"
+            style="width: 130px; height: 130px"
+          />
+          <h6 class="pt-3 pb-4 border-bottom">ساختمان #نام</h6>
+        </div>
+        <div class="pr-4">
+          <p class="pr-3">پنل مدیریت</p>
+          <a href="dashboard.html">
+            <ion-icon
+              name="grid-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            داشبود</a
+          >
+          <a class="dropdown-btn selected" href="#">
+            <ion-icon
+              name="calculator-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            امور مالی
+            <ion-icon
+              name="chevron-down-outline"
+              style="font-size: 0.8em; vertical-align: middle"
+            ></ion-icon>
+          </a>
+          <div class="dropdown-container">
+            <a href="outcome.html">
+              <ion-icon
+                name="trending-down-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              هزینه‌ها
+            </a>
+            <a href="income.html">
+              <ion-icon
+                name="trending-up-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              درآمد‌ها
+            </a>
+            <a href="#" class="selected">
+              <ion-icon
+                name="cash-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              دریافتی‌ها
+            </a>
+            <a href="units-transaction.html">
+              <ion-icon
+                name="receipt-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              صورت وضعیت واحد‌ها
+            </a>
+            <a href="cashbook.html">
+              <ion-icon
+                name="wallet-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              صورت حساب صندوق
+            </a>
+          </div>
+          <a class="dropdown-btn" href="#">
+            <ion-icon
+              name="notifications-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            اطلاع رسانی
+            <ion-icon
+              name="chevron-down-outline"
+              style="font-size: 0.8em; vertical-align: middle"
+            ></ion-icon>
+          </a>
+          <div class="dropdown-container">
+            <a href="news.html">
+              <ion-icon
+                name="newspaper-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              اخبار
+            </a>
+            <a href="rules.html">
+              <ion-icon
+                name="information-circle-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              قوانین
+            </a>
+          </div>
+          <a href="setting-unit.html">
+            <ion-icon
+              name="business-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            واحد‌ها</a
+          >
+          <a href="setting-building.html">
+            <ion-icon
+              name="settings-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            تنظیمات</a
+          >
+          <a href="support.html">
+            <ion-icon
+              name="chatbox-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            پشتیبانی</a
+          >
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="container">
+          <div class="row justify-content-center pt-5">
+            <div class="col-6 text-justify pt-4 pr-5" style="color: #00c0c0">
+              <h5>
+                <ion-icon
+                  name="cash-outline"
+                  style="font-size: 1.5em; vertical-align: middle"
+                ></ion-icon>
+                دریافتی‌های ساختمان
+              </h5>
+              <p style="font-size: 15px; padding-right: 8%">تا تاریخ #تاریخ</p>
+            </div>
+            <div class="col-6 pt-3 pb-2 pl-5">
+              <a
+                class="btn pl-4 pr-4 pt-2 pb-2 text-white fullbtn"
+                href="#"
+                role="button"
+                data-toggle="modal"
+                data-target="#create-payment"
+              >
+                <ion-icon
+                  name="add-circle-outline"
+                  class=""
+                  style="font-size: 1.6em; vertical-align: middle"
+                ></ion-icon>
+                دریافتی جدید
+              </a>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-4 feature-box bg-white p-4">
+            <div class="col-md">
+              <div
+                class="row justify-content-center pb-4 pt-3"
+                style="font-size: 15px"
+              >
+                <div class="col-2 text-justify">
+                  <div>
+                    <span class="pr-1 text-secondary">
+                      <ion-icon
+                        name="calendar-outline"
+                        style="font-size: 1.3em; vertical-align: middle"
+                      ></ion-icon>
+                      تاریخ</span
+                    >
+                  </div>
+                </div>
+                <div class="col-2 text-justify">
+                  <div>
+                    <span class="pr-1 text-secondary">
+                      <ion-icon
+                        name="cash-outline"
+                        style="font-size: 1.3em; vertical-align: middle"
+                      ></ion-icon>
+                      مبلغ(تومان)</span
+                    >
+                  </div>
+                </div>
+                <div class="col-2 text-justify">
+                  <div>
+                    <span class="pr-1 text-secondary">
+                      <ion-icon
+                        name="person-outline"
+                        style="font-size: 1.3em; vertical-align: middle"
+                      ></ion-icon>
+                      واحد</span
+                    >
+                  </div>
+                </div>
+                <div class="col-4 text-justify">
+                  <div>
+                    <span class="pr-1 text-secondary">
+                      <ion-icon
+                        name="reader-outline"
+                        style="font-size: 1.3em; vertical-align: middle"
+                      ></ion-icon>
+                      بابت</span
+                    >
+                  </div>
+                </div>
+                <div class="col-2 text-justify"></div>
+              </div>
+              <div class="row justify-content-center pb-2 pt-2">
+                <div class="col-2 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>تاریخ مربوطه</p>
+                  </div>
+                </div>
+                <div class="col-2 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>۲۰,۰۰۰</p>
+                  </div>
+                </div>
+                <div class="col-2 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>۳</p>
+                  </div>
+                </div>
+                <div class="col-4 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>شارژ</p>
+                  </div>
+                </div>
+                <div class="col-2 text-justify">
+                  <div>
+                    <a
+                      href="#"
+                      role="button"
+                      data-toggle="modal"
+                      data-target="#delete-payment"
+                      ><ion-icon
+                        name="trash-outline"
+                        class="float-left pl-4 link"
+                        style="font-size: 1.3em"
+                      ></ion-icon
+                    ></a>
+                    <a
+                      href="#"
+                      role="button"
+                      data-toggle="modal"
+                      data-target="#edit-payment"
+                      ><ion-icon
+                        name="pencil-outline"
+                        class="float-left pl-3 link"
+                        style="font-size: 1.3em"
+                      ></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center pb-2 pt-2">
+                <div class="col-2 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>تاریخ مربوطه</p>
+                  </div>
+                </div>
+                <div class="col-2 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>۳۰,۰۰۰</p>
+                  </div>
+                </div>
+                <div class="col-2 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>۴</p>
+                  </div>
+                </div>
+                <div class="col-4 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>شارژ</p>
+                  </div>
+                </div>
+                <div class="col-2 text-justify">
+                  <div>
+                    <a href="#" role="button"
+                      ><ion-icon
+                        name="trash-outline"
+                        class="float-left pl-4 link"
+                        style="font-size: 1.3em"
+                      ></ion-icon
+                    ></a>
+                    <a href="#" role="button"
+                      ><ion-icon
+                        name="pencil-outline"
+                        class="float-left pl-3 link"
+                        style="font-size: 1.3em"
+                      ></ion-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center pb-2 pt-2 border-top">
+                <div class="col-2 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>مجموع</p>
+                  </div>
+                </div>
+                <div class="col-2 text-justify">
+                  <div class="pr-2 pl-2 text-dark">
+                    <p>۵۰,۰۰۰</p>
+                  </div>
+                </div>
+                <div class="col-8 text-justify"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL -->
+    <!-- Create-Modal -->
+    <div
+      class="modal fade"
+      id="create-payment"
+      tabindex="-1"
+      aria-labelledby="createPaymentLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered p-5">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title text-dark" id="createPaymentLabel">
+              افزودن دریافتی جدید
+            </h6>
+          </div>
+          <div class="modal-body pt-4">
+            <form>
+              <div class="form-row">
+                <div class="form-group col">
+                  <input
+                    type="text"
+                    id="paymentdate-c"
+                    class="pdate border rounded p-2"
+                    placeholder="تاریخ"
+                    style="font-size: 14px"
+                    required
+                  />
+                </div>
+                <div class="form-group col">
+                  <input
+                    type="number"
+                    id="payment-amount"
+                    class="pdate border rounded p-2 numberInput"
+                    placeholder="مبلغ"
+                    style="font-size: 14px"
+                    required
+                  />
+                </div>
+                <div class="form-group col">
+                  <input
+                    type="number"
+                    id="payment-unit"
+                    class="pdate border rounded p-2"
+                    placeholder="واحد"
+                    style="font-size: 14px"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="description"
+                  rows="2"
+                  placeholder="بابت"
+                  style="font-size: 14px"
+                  required
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer pb-1 pt-1">
+            <button
+              type="button"
+              class="btn btn-link link"
+              data-dismiss="modal"
+            >
+              لغو
+            </button>
+            <button
+              type="submit"
+              class="btn btn-link blue-link"
+              data-dismiss="modal"
+            >
+              ذخیره
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Delete-Modal -->
+    <div
+      class="modal fade"
+      id="delete-payment"
+      tabindex="-1"
+      aria-labelledby="deletePaymentLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered p-5">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title text-dark pt-4" id="deletePaymentLabel">
+              آیا میخواهید این دریافتی را حذف کنید؟
+
+              <br />
+              <p class="pt-3 float-right" style="font-size: 13px">
+                پس از حذف قابل بازگشت نمیباشد.
+              </p>
+            </h6>
+          </div>
+          <div class="modal-footer pb-1 pt-1">
+            <button
+              type="button"
+              class="btn btn-link link"
+              data-dismiss="modal"
+            >
+              لغو
+            </button>
+            <button
+              type="submit"
+              class="btn btn-link blue-link text-danger"
+              data-dismiss="modal"
+            >
+              حذف
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Edit-Modal -->
+    <div
+      class="modal fade"
+      id="edit-payment"
+      tabindex="-1"
+      aria-labelledby="editPaymentLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered p-5">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title text-dark" id="editPaymentLabel">
+              ویرایش دریافتی
+            </h6>
+          </div>
+          <div class="modal-body pt-4">
+            <form>
+              <div class="form-row">
+                <div class="form-group col">
+                  <input
+                    type="text"
+                    id="paymentdate-e"
+                    class="pdate border rounded p-2"
+                    placeholder="تاریخ"
+                    style="font-size: 14px"
+                    required
+                  />
+                </div>
+                <div class="form-group col">
+                  <input
+                    type="number"
+                    id="payment-amount"
+                    class="pdate border rounded p-2 numberInput"
+                    placeholder="مبلغ"
+                    style="font-size: 14px"
+                    required
+                  />
+                </div>
+                <div class="form-group col">
+                  <input
+                    type="number"
+                    id="payment-unit"
+                    class="pdate border rounded p-2"
+                    placeholder="واحد"
+                    style="font-size: 14px"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="description"
+                  rows="2"
+                  placeholder="بابت"
+                  style="font-size: 14px"
+                  required
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer pb-1 pt-1">
+            <button
+              type="button"
+              class="btn btn-link link"
+              data-dismiss="modal"
+            >
+              لغو
+            </button>
+            <button
+              type="submit"
+              class="btn btn-link blue-link"
+              data-dismiss="modal"
+            >
+              ذخیره
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script>
+      var createPaymentObjCal = new AMIB.persianCalendar("paymentdate-c");
+      var editPaymentObjCal = new AMIB.persianCalendar("paymentdate-e");
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="../../../vendors/js/jquery.waypoints.min.js"></script>
+    <script src="../../../vendors/js/bootstrap.min.js"></script>
+    <script src="../../js/script.js"></script>
+  </body>
+</html>

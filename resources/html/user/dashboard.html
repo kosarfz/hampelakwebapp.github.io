@@ -1,0 +1,267 @@
+<!-- Hampelak Website - By: Kosar Feyzi -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="HamPelak is a website for apartment managment that can be used by manager and units."
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../../vendors/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/home page/style.css" />
+    <link rel="stylesheet" href="../../css/app pages/style.css" />
+
+    <title>Dashboard</title>
+    <link rel="icon" href="../../imgs/icon.png" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand m-0 pr-5" href="#">
+          <img src="../../imgs/logo.png" alt="logo" style="width: 110px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto pl-4">
+            <li class="nav-item mr-2 ml-3 pt-1 pb-1">
+              <a class="nav-link nav-tab" href="../../../home.html">
+                <ion-icon
+                  name="log-out-outline"
+                  style="font-size: 1.5em; vertical-align: middle"
+                ></ion-icon>
+                خروج از حساب کاربری <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item mr-2 ml-3 pt-1 pb-1">
+              <a class="nav-link nav-tab" href="support.html">
+                <ion-icon
+                  name="chatbox-ellipses-outline"
+                  style="font-size: 1.5em; vertical-align: middle"
+                ></ion-icon>
+                ارتباط با ما <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- CONTAINER -->
+    <div class="w-100" style="padding-top: 5%">
+      <!-- SIDEBAR -->
+      <div
+        class="sidebar shadow text-justify bg-white"
+        style="padding-bottom: 5%"
+      >
+        <div class="text-center mt-4 p-3">
+          <img
+            src="../../imgs/default-house.png"
+            alt="logo"
+            class="rounded-circle mt-3"
+            style="width: 130px; height: 130px"
+          />
+          <h6 class="pt-3 pb-4 border-bottom">ساختمان #نام</h6>
+        </div>
+        <div class="pr-4">
+          <p class="pr-3">پنل کاربری</p>
+          <a class="selected" href="#">
+            <ion-icon
+              name="grid-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            داشبود</a
+          >
+          <a class="dropdown-btn" href="#">
+            <ion-icon
+              name="calculator-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            امور مالی
+            <ion-icon
+              name="chevron-down-outline"
+              style="font-size: 0.8em; vertical-align: middle"
+            ></ion-icon>
+          </a>
+          <div class="dropdown-container">
+            <a href="outcome.html">
+              <ion-icon
+                name="trending-down-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              هزینه‌ها
+            </a>
+            <a href="income.html">
+              <ion-icon
+                name="trending-up-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              درآمد‌ها
+            </a>
+            <a href="cashbook.html">
+              <ion-icon
+                name="wallet-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              صورت حساب صندوق
+            </a>
+          </div>
+          <a class="dropdown-btn" href="#">
+            <ion-icon
+              name="notifications-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            اطلاع رسانی
+            <ion-icon
+              name="chevron-down-outline"
+              style="font-size: 0.8em; vertical-align: middle"
+            ></ion-icon>
+          </a>
+          <div class="dropdown-container">
+            <a href="news.html">
+              <ion-icon
+                name="newspaper-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              اخبار
+            </a>
+            <a href="rules.html">
+              <ion-icon
+                name="information-circle-outline"
+                style="font-size: 1.3em; vertical-align: middle"
+              ></ion-icon>
+              قوانین
+            </a>
+          </div>
+          <a href="unit-transaction.html">
+            <ion-icon
+              name="business-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            صورت وضعیت واحد</a
+          >
+          <!-- <a href="setting.html">
+            <ion-icon
+              name="settings-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            تنظیمات</a
+          > -->
+          <a href="support.html">
+            <ion-icon
+              name="chatbox-outline"
+              style="font-size: 1.5em; vertical-align: middle"
+            ></ion-icon>
+            پشتیبانی</a
+          >
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="container">
+          <div class="row justify-content-center pt-5 pb-3">
+            <div class="col-md text-justify pt-4 pr-5">
+              <h6>
+                <ion-icon
+                  name="calendar-outline"
+                  style="font-size: 1.5em; vertical-align: middle"
+                ></ion-icon>
+                وضعیت ساختمان تا #تاریخ
+              </h6>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div
+              class="col-5 border pb-3 pt-4 text-center feature-box bg-white"
+            >
+              <h4 class="pb-5 pt-4 border-bottom">
+                <span class="pl-3 text-dark"> موجودی صندوق:</span>
+                <strong class="text-info">۲۳۰,۰۰۰</strong>
+                <span class="text-info" style="font-size: 17px">تومان</span>
+              </h4>
+              <div class="pb-2 pt-3">
+                <a href="cashbook.html" class="link">مشاهده جزئیات</a>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center pt-4">
+            <div
+              class="col-3 border ml-3 mr-3 p-3 text-center feature-box bg-white"
+            >
+              <h5 class="pb-3 pt-4 text-dark">مجموع هزینه‌ها:</h5>
+              <h4 class="pb-4 border-bottom text-danger">
+                <strong>۱۰۰,۰۰۰</strong>
+                <span style="font-size: 16px">تومان</span>
+              </h4>
+              <div class="pl-4 pr-4 pt-2">
+                <a href="outcome.html" class="link">مشاهده جزئیات</a>
+              </div>
+            </div>
+            <div
+              class="col-3 border ml-3 mr-3 p-3 text-center feature-box bg-white"
+            >
+              <h5 class="pb-3 pt-4 text-dark">مجموع درآمد‌ها:</h5>
+              <h4 class="pb-4 border-bottom text-success">
+                <strong>۳۰,۰۰۰</strong>
+                <span style="font-size: 16px">تومان</span>
+              </h4>
+              <div class="pl-4 pr-4 pt-2">
+                <a href="income.html" class="link">مشاهده جزئیات</a>
+              </div>
+            </div>
+            <div
+              class="col-3 border ml-3 mr-3 p-3 text-center feature-box bg-white"
+            >
+              <h5 class="pb-3 pt-4 text-dark">مجموع بدهی شما:</h5>
+              <h4 class="pb-4 border-bottom text-warning">
+                <strong>۳۰۰,۰۰۰</strong>
+                <span style="font-size: 16px">تومان</span>
+              </h4>
+              <div class="pl-4 pr-4 pt-2">
+                <a href="unit-transaction.html" class="link">مشاهده جزئیات</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="../../../vendors/js/jquery.waypoints.min.js"></script>
+    <script src="../../../vendors/js/bootstrap.min.js"></script>
+    <script src="../../js/script.js"></script>
+  </body>
+</html>
