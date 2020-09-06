@@ -7,9 +7,9 @@
   "description": "Apartment Managment App",
   "icons": [
     {
-      "src": "../imgs/logo.png",
+      "src": "../imgs/logo-mini.png",
       "type": "image/png",
-      "sizes": "331x143"
+      "sizes": "72x72"
     }
   ]
 }
