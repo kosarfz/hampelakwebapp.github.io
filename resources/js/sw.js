@@ -1,13 +1,13 @@
 const staticName = "hampelak-v1";
 const cacheAssets = [
   "./",
-  "../../home.html",
-  "../../vendors/css/bootstrap.min.css",
-  "../css/home page/style.css",
-  "/manifest.json",
-  "/script.js",
-  "../../vendors/js/bootstrap.min.js",
-  "../../vendors/js/jquery.waypoints.min.js",
+  "./../../home.html",
+  "./../../vendors/css/bootstrap.min.css",
+  "./../css/home page/style.css",
+  "./manifest.json",
+  "./script.js",
+  "./../../vendors/js/bootstrap.min.js",
+  "./../../vendors/js/jquery.waypoints.min.js",
 ];
 
 self.addEventListener("install", async (e) => {
